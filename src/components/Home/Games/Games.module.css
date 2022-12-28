@@ -69,6 +69,13 @@
 }
 
 
+.game__container__card__con__card__btn {
+    color: var(--green-color);
+    border: 2px solid var(--green-color);
+    padding: 5px;
+    border-radius: 4px;
+}
+
 @media screen and (max-width: 992px) {
 
     .game__container__card__con {
@@ -77,4 +84,19 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .game__container__card__con__card>div {
+
+        font-size: 12px;
+
+    }
+
+
+    .game__container__card__con__card__btn {
+        color: var(--green-color);
+        border: 2px solid var(--green-color);
+        padding: 3px 5px;
+        border-radius: 4px;
+    }
+
 }
