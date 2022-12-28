@@ -57,3 +57,16 @@
     object-fit: contain;
     width: 80%;
 }
+
+
+@media screen and (max-width: 992px) {
+
+    .game__container__card__con {
+        width: 90%;
+        /* padding: 20px; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+
+    }
+}
