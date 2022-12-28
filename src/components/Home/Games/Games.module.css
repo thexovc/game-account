@@ -1,0 +1,19 @@
+.game__container {
+    background-color: var(--bg-color);
+    width: 100%;
+    padding: 20px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.game__container__title {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.game__container__title>h1 {
+    color: var(--primary-color);
+}
