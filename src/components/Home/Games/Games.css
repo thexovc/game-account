@@ -52,6 +52,8 @@
     flex-direction: column;
     gap: 20px;
     width: 100%;
+    background-color: var(--secondary-color);
+    padding-bottom: 30px;
 }
 
 .game__container__card__con__card>img {
@@ -62,7 +64,7 @@
 .game__container__card__con__card>div {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 14px;
+    font-size: 16px;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -74,6 +76,10 @@
     border: 2px solid var(--green-color);
     padding: 5px;
     border-radius: 4px;
+}
+
+.game__container__card__con__gray {
+    opacity: 40%;
 }
 
 @media screen and (max-width: 992px) {
