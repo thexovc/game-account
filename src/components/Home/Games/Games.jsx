@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Games.module.css'
+import cod1 from '../../../assets/Home/Game/cod1.jpg'
 
 const Games = () => {
     return (
@@ -7,7 +8,7 @@ const Games = () => {
             <div className={styles.game__container__title}>
                 <h1>Games</h1>
                 <ul>
-                    <li>Popular</li>
+                    <li className={styles.game__container__title__active}>Popular</li>
                     <li>Recent</li>
                 </ul>
             </div>
@@ -15,7 +16,27 @@ const Games = () => {
             <div className={styles.game__container__card__con}>
 
                 <div className={styles.game__container__card__con__card}>
-                    <img src="" alt="" />
+                    <img src={cod1} alt="" />
+                    <p>Call of Duty mobile</p>
+                    <div>Enter</div>
+                </div>
+                <div className={styles.game__container__card__con__card}>
+                    <img src={cod1} alt="" />
+                    <p>Call of Duty mobile</p>
+                    <div>Enter</div>
+                </div>
+                <div className={styles.game__container__card__con__card}>
+                    <img src={cod1} alt="" />
+                    <p>Call of Duty mobile</p>
+                    <div>Enter</div>
+                </div>
+                <div className={styles.game__container__card__con__card}>
+                    <img src={cod1} alt="" />
+                    <p>Call of Duty mobile</p>
+                    <div>Enter</div>
+                </div>
+                <div className={styles.game__container__card__con__card}>
+                    <img src={cod1} alt="" />
                     <p>Call of Duty mobile</p>
                     <div>Enter</div>
                 </div>
