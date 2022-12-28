@@ -17,28 +17,38 @@ const Games = () => {
 
                 <div className={styles.game__container__card__con__card}>
                     <img src={cod1} alt="" />
-                    <p>Call of Duty mobile</p>
-                    <div>Enter</div>
+                    <div>
+                        <p>Call of Duty mobile</p>
+                        <p>Enter</p>
+                    </div>
                 </div>
                 <div className={styles.game__container__card__con__card}>
                     <img src={cod1} alt="" />
-                    <p>Call of Duty mobile</p>
-                    <div>Enter</div>
+                    <div>
+                        <p>Call of Duty mobile</p>
+                        <p>Enter</p>
+                    </div>
                 </div>
                 <div className={styles.game__container__card__con__card}>
                     <img src={cod1} alt="" />
-                    <p>Call of Duty mobile</p>
-                    <div>Enter</div>
+                    <div>
+                        <p>Call of Duty mobile</p>
+                        <p>Enter</p>
+                    </div>
                 </div>
                 <div className={styles.game__container__card__con__card}>
                     <img src={cod1} alt="" />
-                    <p>Call of Duty mobile</p>
-                    <div>Enter</div>
+                    <div>
+                        <p>Call of Duty mobile</p>
+                        <p>Enter</p>
+                    </div>
                 </div>
                 <div className={styles.game__container__card__con__card}>
                     <img src={cod1} alt="" />
-                    <p>Call of Duty mobile</p>
-                    <div>Enter</div>
+                    <div>
+                        <p>Call of Duty mobile</p>
+                        <p>Enter</p>
+                    </div>
                 </div>
 
             </div>
