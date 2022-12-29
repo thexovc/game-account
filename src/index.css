@@ -14,6 +14,11 @@ p {
     margin: 0;
 }
 
+@font-face {
+    font-family: Imported;
+    src: url(./fonts/BR\ Firma\ Regular.otf);
+}
+
 
 :root {
     --bg-color: #170727;
@@ -21,4 +26,5 @@ p {
     --secondary-color: #063856;
     --text-color: #f2f2f2;
     --green-color: #00D121;
+    font-family: Imported;
 }
