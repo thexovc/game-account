@@ -55,4 +55,12 @@
         border-radius: 4px;
     }
 
+    .gamecard__container__card__con__gray {
+        opacity: 40%;
+        color: lightgray !important;
+        border: 2px solid lightgray;
+        padding: 5px;
+        border-radius: 4px;
+    }
+
 }
