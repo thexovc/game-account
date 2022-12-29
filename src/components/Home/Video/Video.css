@@ -6,6 +6,7 @@
     color: var(--text-color);
     gap: 20px;
     background-color: var(--bg-color);
+    padding-bottom: 5%;
 }
 
 .video__container__heading {
