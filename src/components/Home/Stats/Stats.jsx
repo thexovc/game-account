@@ -1,6 +1,5 @@
 import React from "react";
 import "./Stats.css";
-import ha1 from "../../../assets/Home/ha1.jpg";
 import ha2 from "../../../assets/Home/ha2.jpg";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { BsWallet } from "react-icons/bs";

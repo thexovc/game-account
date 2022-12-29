@@ -1,11 +1,7 @@
 import React from "react";
 import "./Heroarea.css";
 
-import videoBg from "../../../assets/Home/bgvideo.mp4";
-import videoBg1 from "../../../assets/Home/bgvideo1.mp4";
 import videoBg2 from "../../../assets/Home/bgvideo2.mp4";
-import videoBg3 from "../../../assets/Home/bgvideo3.mp4";
-import videoBg4 from "../../../assets/Home/bgvideo4.mp4";
 
 const Heroarea = () => {
   return (
