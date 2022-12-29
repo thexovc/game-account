@@ -1,0 +1,58 @@
+.gamecard__container__card__con__card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding-bottom: 30px;
+}
+
+.gamecard__container__card__con__card>img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.gamecard__container__card__con__card>div {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gamecard__container__card__con__card__btn {
+    color: var(--green-color);
+    border: 2px solid var(--green-color);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.gamecard__container__card__con__gray {
+    opacity: 40%;
+    color: lightgray !important;
+    border: 2px solid lightgray;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .gamecard__container__card__con__card>div {
+
+        font-size: 12px;
+
+    }
+
+
+    .gamecard__container__card__con__card__btn {
+        color: var(--green-color);
+        border: 2px solid var(--green-color);
+        padding: 3px 5px;
+        border-radius: 4px;
+    }
+
+}

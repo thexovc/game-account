@@ -1,6 +1,7 @@
 import React from 'react'
 import './Games.css'
 import cod1 from '../../../assets/Home/Game/cod1.jpg'
+import GameCard from './GameCard'
 
 const Games = () => {
     return (
@@ -15,41 +16,12 @@ const Games = () => {
 
             <div className="game__container__card__con">
 
-                <div className="game__container__card__con__card">
-                    <img src={cod1} alt="" />
-                    <div>
-                        <p>Call of Duty mobile</p>
-                        <p className="game__container__card__con__card__btn">Enter</p>
-                    </div>
-                </div>
-                <div className="game__container__card__con__card game__container__card__con__gray">
-                    <img src={cod1} alt="" />
-                    <div>
-                        <p>Call of Duty mobile</p>
-                        <p className="game__container__card__con__card__btn">Enter</p>
-                    </div>
-                </div>
-                <div className="game__container__card__con__card game__container__card__con__gray">
-                    <img src={cod1} alt="" />
-                    <div>
-                        <p>Call of Duty mobile</p>
-                        <p className="game__container__card__con__card__btn">Enter</p>
-                    </div>
-                </div>
-                <div className="game__container__card__con__card game__container__card__con__gray">
-                    <img src={cod1} alt="" />
-                    <div>
-                        <p>Call of Duty mobile</p>
-                        <p className="game__container__card__con__card__btn">Enter</p>
-                    </div>
-                </div>
-                <div className="game__container__card__con__card game__container__card__con__gray">
-                    <img src={cod1} alt="" />
-                    <div>
-                        <p>Call of Duty mobile</p>
-                        <p className="game__container__card__con__card__btn">Enter</p>
-                    </div>
-                </div>
+                <GameCard />
+                <GameCard type="coming" />
+                <GameCard type="coming" />
+                <GameCard type="coming" />
+                <GameCard type="coming" />
+
 
             </div>
 

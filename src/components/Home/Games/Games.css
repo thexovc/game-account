@@ -46,41 +46,7 @@
 
 }
 
-.game__container__card__con__card {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    background-color: var(--secondary-color);
-    padding-bottom: 30px;
-}
 
-.game__container__card__con__card>img {
-    object-fit: contain;
-    width: 100%;
-}
-
-.game__container__card__con__card>div {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 16px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.game__container__card__con__card__btn {
-    color: var(--green-color);
-    border: 2px solid var(--green-color);
-    padding: 5px;
-    border-radius: 4px;
-}
-
-.game__container__card__con__gray {
-    opacity: 40%;
-}
 
 @media screen and (max-width: 992px) {
 
