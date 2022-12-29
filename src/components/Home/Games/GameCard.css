@@ -5,12 +5,14 @@
     gap: 20px;
     width: 100%;
     background-color: var(--secondary-color);
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    border-radius: 12px;
 }
 
 .gamecard__container__card__con__card>img {
     object-fit: contain;
     width: 100%;
+    border-radius: 12px;
 }
 
 .gamecard__container__card__con__card>div {

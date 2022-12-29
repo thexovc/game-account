@@ -1,16 +1,16 @@
 import React from 'react'
 import cod1 from '../../../assets/Home/Game/cod1.jpg'
-import './TrxeCard.css'
+import './TrxCard.css'
 
-function TrxCard({ type }) {
+function TrxCard() {
 
     return (
         <>
-            <div className="gamecard__container__card__con__card">
+            <div className="trxcard__container__card__con__card">
                 <img src={cod1} alt="" />
                 <div>
-                    <p>Call of Duty mobile</p>
-                    <p className={`gamecard__container__card__con__card__btn ${type && "gamecard__container__card__con__gray"}`}>Enter</p>
+                    <p>Ancraka sold for $79</p>
+                    <p>Legendary Mystic grade AK117 Lava Edition</p>
                 </div>
             </div>
         </>

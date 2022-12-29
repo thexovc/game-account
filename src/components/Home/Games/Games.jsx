@@ -20,7 +20,6 @@ const Games = () => {
                 <GameCard type="coming" />
                 <GameCard type="coming" />
                 <GameCard type="coming" />
-                <GameCard type="coming" />
 
 
             </div>

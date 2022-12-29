@@ -49,14 +49,14 @@
     font-size: 18px;
     color: var(--text-color);
     background-color: var(--primary-color);
-    padding: 10px;
+    padding: 5px;
     border-radius: 12px;
 }
 
 .navbar__container__right__button__login {
     background-color: var(--bg-color) !important;
-    border-width: 4px;
-    border-color: var(--primary-color);
+    border-width: 2px;
+    border-color: var(--primary-color) !important;
 }
 
 .navbar__container__mobile {

@@ -7,6 +7,7 @@ import Stats from '../../components/Home/Stats/Stats'
 import Wcu from '../../components/Home/Wcu/Wcu'
 import Plans from '../../components/Home/Plans/Plans'
 import Cta from '../../components/Home/Cta/Cta'
+import Trx from '../../components/Home/Trx/Trx'
 import './Home.css'
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
             <Plans />
             <HowToUse />
             <Video />
+            <Trx />
         </div>
     )
 }
