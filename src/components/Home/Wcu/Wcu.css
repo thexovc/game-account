@@ -5,8 +5,8 @@
   justify-content: center;
 
   background-color: var(--bg-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
 }
 
@@ -82,11 +82,9 @@ h1 {
 @media screen and (max-width: 576px) {
 } */
 
-@media screen and (min-width: 1400px) {
-}
+@media screen and (min-width: 1400px) {}
 
-@media screen and (max-width: 1400px) {
-}
+@media screen and (max-width: 1400px) {}
 
 @media screen and (max-width: 1200px) {
   .wcu__content {
@@ -141,14 +139,11 @@ h1 {
   }
 }
 
-@media screen and (max-width: 992px) {
-}
+@media screen and (max-width: 992px) {}
 
-@media screen and (max-width: 768px) {
-}
+@media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 576px) {
-}
+@media screen and (max-width: 576px) {}
 
 @media screen and (max-width: 476px) {
   .wcu__content {
