@@ -1,0 +1,146 @@
+.login__container {
+    width: 100%;
+    display: flex;
+    background-image: url('../../../assets/Auth/gamepad2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    color: var(--text-color);
+    height: 100vh;
+}
+
+.login__container__left {
+    width: 50%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Created with https://www.css-gradient.com */
+    background: rgba(23, 7, 39, 0.7);
+    background: -webkit-radial-gradient(top left, rgba(23, 7, 39, 0.7), rgba(22, 24, 19, 0.7));
+    background: -moz-radial-gradient(top left, rgba(23, 7, 39, 0.7), rgba(22, 24, 19, 0.7));
+    background: radial-gradient(to bottom right, rgba(23, 7, 39, 0.7), rgba(22, 24, 19, 0.4));
+}
+
+
+.login__container__left__form {
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login__container__left__form>h1 {
+    width: 100%;
+    text-align: left;
+}
+
+.login__container__left__form>form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.login__container__left__form>form>label {
+    color: #31F9ED;
+}
+
+.login__container__left__form>form>input {
+    height: 20px;
+    border-top: none;
+    background: transparent;
+    border-left: none;
+    border-right: none;
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+.login__container__left__form>form>input:focus {
+    outline: none;
+}
+
+.login__container__left__form__checkbox {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.login__container__left__form>form>button {
+    width: 40%;
+    background: linear-gradient(270deg, #33E1DD 0%, #1E9492 0.01%, #177D7A 16.15%, #053E3C 58.85%);
+    border-radius: 32px;
+    border: none;
+    font-size: 18px;
+    color: var(--text-color);
+    height: 50px;
+}
+
+.login__container__left__form__signup {
+    width: 100%;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login__container__left__form__checkbox>span {
+    color: #31F9ED;
+}
+
+.login__container__left__form__signup>div {
+    padding: 10px 20px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #33E1DD;
+    border-radius: 12px;
+}
+
+.login__container__left__form__signup>p>span {
+    color: #1865D8;
+}
+
+.login__container__right {
+    padding-top: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login__container__right__nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    color: #34E0DD;
+}
+
+@media screen and (max-width: 768px) {
+    .login__container {
+        justify-content: center;
+
+    }
+
+    .login__container__left {
+        padding: 0;
+        justify-content: center;
+        width: 90%;
+        margin: 40px 0;
+        border-radius: 12px;
+    }
+
+    .login__container__left__form {
+        width: 90%;
+    }
+
+    .login__container__left__form__signup>div {
+        font-size: 12px;
+    }
+
+    .login__container__right {
+        display: none;
+    }
+
+}

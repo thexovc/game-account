@@ -2,13 +2,23 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import { FiMenu } from 'react-icons/fi'
 import { motion } from "framer-motion"
+import { useNavigate } from 'react-router-dom'
 
-const Navbar = () => {
-    const [toggle, setToggle] = useState(false)
+const Navbar = ({ toggle, setToggle }) => {
+
+    const navigate = useNavigate()
 
     const handleToggle = () => {
         setToggle(!toggle);
     }
+
+    const login = () => {
+        navigate('login')
+    }
+    const signup = () => {
+        navigate('signup')
+    }
+
 
     const variants = {
         open: {
@@ -35,25 +45,25 @@ const Navbar = () => {
                 <motion.div
                     variants={variants}
                     className="navbar__container__mobile__link">
-                    <li>Home</li>
-                    <li>Games</li>
-                    <li>Plans</li>
-                    <li>Contact</li>
-                    <button className="navbar__container__mobile__link__button__login">Sign In</button>
-                    <button className="navbar__container__mobile__link__button__signup">Sign Up</button>
+                    <li style={{ cursor: "pointer" }}>Home</li>
+                    <li style={{ cursor: "pointer" }}>Games</li>
+                    <li style={{ cursor: "pointer" }}>Plans</li>
+                    <li style={{ cursor: "pointer" }}>Contact</li>
+                    <button style={{ cursor: "pointer" }} className="navbar__container__mobile__link__button__login">Sign In</button>
+                    <button style={{ cursor: "pointer" }} className="navbar__container__mobile__link__button__signup">Sign Up</button>
                 </motion.div>
             )}
 
             <div className="navbar__container__right">
                 <ul className="navbar__container__right__link">
-                    <li>Home</li>
-                    <li>Games</li>
-                    <li>Plans</li>
-                    <li>Contact</li>
+                    <li style={{ cursor: "pointer" }}>Home</li>
+                    <li style={{ cursor: "pointer" }}>Games</li>
+                    <li style={{ cursor: "pointer" }}>Plans</li>
+                    <li style={{ cursor: "pointer" }}>Contact</li>
                 </ul>
                 <div className="navbar__container__right__button">
-                    <button className="navbar__container__right__button__login">Sign In</button>
-                    <button>Sign Up</button>
+                    <button style={{ cursor: "pointer" }} onClick={login} className="navbar__container__right__button__login">Sign In</button>
+                    <button style={{ cursor: "pointer" }} onClick={signup}>Sign Up</button>
                 </div>
             </div>
 
