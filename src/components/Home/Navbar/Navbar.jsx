@@ -48,6 +48,9 @@ const Navbar = ({ toggle, setToggle }) => {
                 <motion.div
                     variants={variants}
                     className="navbar__container__mobile__link">
+                    <div className="navbar__container___mobile__link__close" onClick={handleToggle}>
+                        x
+                    </div>
                     <li style={{ cursor: "pointer" }} onClick={home}>Home</li>
                     <li style={{ cursor: "pointer" }}>Games</li>
                     <li style={{ cursor: "pointer" }}>Plans</li>
@@ -58,6 +61,7 @@ const Navbar = ({ toggle, setToggle }) => {
             )}
 
             <div className="navbar__container__right">
+
                 <ul className="navbar__container__right__link">
                     <li style={{ cursor: "pointer" }} onClick={home}>Home</li>
                     <li style={{ cursor: "pointer" }}>Games</li>

@@ -90,12 +90,20 @@
         display: none;
     }
 
+
+
     .navbar__container__mobile {
         padding-right: 10px;
         width: 50%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
+    }
+
+    .navbar__container___mobile__link__close {
+        font-size: 30px;
+        text-align: end;
+        font-weight: bold;
     }
 
     .navbar__container__mobile__link {
@@ -115,7 +123,7 @@
         width: 60%;
         padding-left: 40px;
         padding-right: 40px;
-        padding-top: 60px;
+        padding-top: 20px;
         right: 0;
         position: fixed;
         height: 100vh;
