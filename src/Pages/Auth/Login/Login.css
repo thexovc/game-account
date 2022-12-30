@@ -1,7 +1,7 @@
 .login__container {
     width: 100%;
     display: flex;
-    background-image: url('../../../assets/Auth/gamepad2.jpg');
+    background-image: url('../../../assets/Auth/gamepad.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: center center; */
