@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Imported;
 }
 
 h1 {
@@ -19,12 +18,11 @@ p {
     src: url(./fonts/BR\ Firma\ Regular.otf);
 }
 
-
 :root {
     --bg-color: #170727;
-    --primary-color: #F24902;
+    --primary-color: #f24902;
     --secondary-color: #063856;
     --text-color: #f2f2f2;
-    --green-color: #00D121;
+    --green-color: #00d121;
     font-family: Imported;
 }
