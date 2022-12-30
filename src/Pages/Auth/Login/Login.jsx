@@ -12,7 +12,7 @@ const Login = () => {
     return (
         <div className='login__container'>
 
-            <div className="login__container__left">
+            <div className="login__container__left__login">
 
                 <div className="login__container__left__form">
                     <h1>SIGN IN!</h1>

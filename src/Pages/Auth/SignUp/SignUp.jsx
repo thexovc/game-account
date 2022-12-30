@@ -1,4 +1,5 @@
 import React from 'react'
+import { FiMenu } from 'react-icons/fi'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -26,7 +27,7 @@ const SignUp = () => {
                         <input type="email" /> <br />
                         <label htmlFor="Password">Password</label>
                         <input type="password" /><br />
-                        <label htmlFor="Password">Password</label>
+                        <label htmlFor="Password">Confirm Password</label>
                         <input type="password" />
 
                         <div className="login__container__left__form__checkbox">

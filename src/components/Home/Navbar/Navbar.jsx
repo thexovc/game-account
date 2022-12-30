@@ -18,6 +18,9 @@ const Navbar = ({ toggle, setToggle }) => {
     const signup = () => {
         navigate('signup')
     }
+    const home = () => {
+        navigate('/')
+    }
 
 
     const variants = {
@@ -45,18 +48,18 @@ const Navbar = ({ toggle, setToggle }) => {
                 <motion.div
                     variants={variants}
                     className="navbar__container__mobile__link">
-                    <li style={{ cursor: "pointer" }}>Home</li>
+                    <li style={{ cursor: "pointer" }} onClick={home}>Home</li>
                     <li style={{ cursor: "pointer" }}>Games</li>
                     <li style={{ cursor: "pointer" }}>Plans</li>
                     <li style={{ cursor: "pointer" }}>Contact</li>
-                    <button style={{ cursor: "pointer" }} className="navbar__container__mobile__link__button__login">Sign In</button>
-                    <button style={{ cursor: "pointer" }} className="navbar__container__mobile__link__button__signup">Sign Up</button>
+                    <button style={{ cursor: "pointer" }} onClick={login} className="navbar__container__mobile__link__button__login">Sign In</button>
+                    <button style={{ cursor: "pointer" }} onClick={signup} className="navbar__container__mobile__link__button__signup">Sign Up</button>
                 </motion.div>
             )}
 
             <div className="navbar__container__right">
                 <ul className="navbar__container__right__link">
-                    <li style={{ cursor: "pointer" }}>Home</li>
+                    <li style={{ cursor: "pointer" }} onClick={home}>Home</li>
                     <li style={{ cursor: "pointer" }}>Games</li>
                     <li style={{ cursor: "pointer" }}>Plans</li>
                     <li style={{ cursor: "pointer" }}>Contact</li>
