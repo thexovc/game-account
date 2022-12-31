@@ -1,16 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Login.css'
+import { FiMenu } from 'react-icons/fi'
 
 const Login = () => {
     const navigate = useNavigate()
+    const [toggle, setToggle] = useState(false)
 
     const home = () => {
         navigate('/')
     }
 
+    const handleToggle = () => {
+        setToggle(!toggle);
+    }
+
+    const login = () => {
+        navigate('/login')
+    }
+    const signup = () => {
+        navigate('/signup')
+    }
+
+
+
     return (
         <div className='login__container'>
+            <div className="login__container__toggle" onClick={handleToggle}>
+                <FiMenu className="navbar__container__mobile__icon" />
+            </div>
 
             <div className="login__container__left__login">
 
@@ -36,7 +54,7 @@ const Login = () => {
 
                         <p>Don’t have an account? <span style={{ cursor: "pointer" }}>Sign Up</span></p>
                     </div>
-
+                    <br /><br />
                 </div>
             </div>
             <div className="login__container__right">
@@ -47,6 +65,22 @@ const Login = () => {
                 </div>
             </div>
 
+            {toggle && (
+                <div
+                    className="navbar__container__mobile__link">
+                    <div className="navbar__container___mobile__link__close" onClick={handleToggle}>
+                        x
+                    </div>
+                    <li style={{ cursor: "pointer" }} onClick={home}>Home</li>
+                    <li style={{ cursor: "pointer" }}>Games</li>
+                    <li style={{ cursor: "pointer" }}>Plans</li>
+                    <li style={{ cursor: "pointer" }}>Contact</li>
+                    <button style={{ cursor: "pointer" }} onClick={login} className="navbar__container__mobile__link__button__login">Sign In</button>
+                    <button style={{ cursor: "pointer" }} onClick={signup} className="navbar__container__mobile__link__button__signup">Sign Up</button>
+                </div>
+            )}
+
+            <br /><br /><br /><br /><br /><br /><br />   <br />
         </div>
     )
 }
