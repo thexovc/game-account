@@ -37,13 +37,13 @@ const SignUp = () => {
 
                         <form action="">
                             <label htmlFor="username">Username</label>
-                            <input type="text" /> <br />
+                            <input className='border-b-2 border-white' type="text" /> <br />
                             <label htmlFor="email">Email address</label>
-                            <input type="email" /> <br />
+                            <input className='border-b-2 border-white' type="email" /> <br />
                             <label htmlFor="Password">Password</label>
-                            <input type="password" /><br />
+                            <input className='border-b-2 border-white' type="password" /><br />
                             <label htmlFor="Password">Confirm Password</label>
-                            <input type="password" />
+                            <input className='border-b-2 border-white' type="password" />
 
                             <div className="login__container__left__form__checkbox">
                                 <input type="checkbox" />
@@ -57,7 +57,7 @@ const SignUp = () => {
                                 Google Sign Up
                             </div>
 
-                            <p>Already have an account? <span style={{ cursor: "pointer" }}>Sign In</span></p>
+                            <p onClick={login}>Already have an account? <span style={{ cursor: "pointer" }}>Sign In</span></p>
                         </div>
 
                     </div>

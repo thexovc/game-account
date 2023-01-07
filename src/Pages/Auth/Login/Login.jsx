@@ -37,9 +37,9 @@ const Login = () => {
 
                     <form action="">
                         <label htmlFor="email">Email address</label>
-                        <input type="email" /> <br />
+                        <input className='border-b-2 border-white' type="email" /> <br />
                         <label htmlFor="Password">Password</label>
-                        <input type="password" />
+                        <input className='border-b-2 border-white' type="password" />
                         <div className="login__container__left__form__checkbox">
                             <input type="checkbox" />
                             Remember me
@@ -52,7 +52,7 @@ const Login = () => {
                             Google Sign Up
                         </div>
 
-                        <p>Don’t have an account? <span style={{ cursor: "pointer" }}>Sign Up</span></p>
+                        <p onClick={signup}>Don’t have an account? <span style={{ cursor: "pointer" }}>Sign Up</span></p>
                     </div>
                     <br /><br />
                 </div>

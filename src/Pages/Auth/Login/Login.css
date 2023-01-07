@@ -115,7 +115,7 @@
 
 .login__container__left__form__signup>div {
     padding: 10px 20px;
-    width: 35%;
+    width: 45%;
     display: flex;
     justify-content: center;
     border: 1px solid #33E1DD;
@@ -198,6 +198,15 @@
         /* position: fixed; */
         margin-top: 10px;
         margin-right: 10px;
+    }
+
+    .login__container__left__form__signup>div {
+        padding: 10px 20px;
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #33E1DD;
+        border-radius: 12px;
     }
 
 

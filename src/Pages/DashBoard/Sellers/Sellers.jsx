@@ -1,5 +1,6 @@
 import './Sellers.css'
 import { AiFillStar } from 'react-icons/ai'
+import { FaUserTag } from 'react-icons/fa'
 import cod1 from '../../../assets/Home/Game/cod1.jpg'
 
 
@@ -8,7 +9,6 @@ const Sellers = () => {
         <div className='seller__container'>
 
             {/* search start */}
-
             <div class="relative md:w-2/3 pt-5 w-5/6 max-w-lg">
                 <form>
                     <div class="flex justify-between overflow-hidden rounded-md bg-white shadow shadow-black/20">
@@ -18,33 +18,15 @@ const Sellers = () => {
                         </span>
                     </div>
                 </form>
-                {/* <div class="absolute mt-2 w-full overflow-hidden rounded-md bg-white">
-                    <div class="cursor-pointer py-2 px-3 hover:bg-slate-100">
-                        <p class="text-sm font-medium text-gray-600">Button Ripple Effect</p>
-                        <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing...</p>
-                    </div>
-                    <div class="cursor-pointer py-2 px-3 hover:bg-slate-100">
-                        <p class="text-sm font-medium text-gray-600">Custom Radio Buttons</p>
-                        <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing...</p>
-                    </div>
-                    <div class="cursor-pointer py-2 px-3 hover:bg-slate-100">
-                        <p class="text-sm font-medium text-gray-600">Expand Images on Hover</p>
-                        <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing...</p>
-                    </div>
-                    <div class="cursor-pointer py-2 px-3 hover:bg-slate-100">
-                        <p class="text-sm font-medium text-gray-600">Custom Checkbox</p>
-                        <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing...</p>
-                    </div>
-                </div> */}
             </div>
-
             {/* search end */}
 
+            {/* top ranking */}
             <h1 className='text-xl'>Top Ranking Sellers</h1>
             <div className="seller__container__carousel">
                 <div className="seller__container__card__con__card">
 
-                    <div className='seller__container__card__con__card__desc'>
+                    <div className='seller__container__card__con__card__desc cursor-pointer'>
                         <img src={cod1} alt="" />
                         <div className="seller__container__card__con__card__desc__text">
                             <p>Sold 234 account </p>
@@ -52,13 +34,13 @@ const Sellers = () => {
                         </div>
                     </div>
                     <div className='seller__container__card__con__card__stats'>
-                        <p>Ashalav</p>
+                        <p className='cursor-pointer'>Ashalav</p>
                         <p className="flex gap-1 items-center border-2 p-1 rounded-md border-sky-600"><AiFillStar className='seller__star' /> 5.7</p>
                     </div>
                 </div>
                 <div className="seller__container__card__con__card">
 
-                    <div className='seller__container__card__con__card__desc'>
+                    <div className='seller__container__card__con__card__desc cursor-pointer'>
                         <img src={cod1} alt="" />
                         <div className="seller__container__card__con__card__desc__text">
                             <p>Sold 234 account </p>
@@ -66,13 +48,13 @@ const Sellers = () => {
                         </div>
                     </div>
                     <div className='seller__container__card__con__card__stats'>
-                        <p>Ashalav</p>
+                        <p className='cursor-pointer'>Ashalav</p>
                         <p className="flex gap-1 items-center border-2 p-1 rounded-md border-sky-600"><AiFillStar className='seller__star' /> 5.7</p>
                     </div>
                 </div>
                 <div className="seller__container__card__con__card">
 
-                    <div className='seller__container__card__con__card__desc'>
+                    <div className='seller__container__card__con__card__desc cursor-pointer'>
                         <img src={cod1} alt="" />
                         <div className="seller__container__card__con__card__desc__text">
                             <p>Sold 234 account </p>
@@ -80,13 +62,13 @@ const Sellers = () => {
                         </div>
                     </div>
                     <div className='seller__container__card__con__card__stats'>
-                        <p>Ashalav</p>
+                        <p className='cursor-pointer'>Ashalav</p>
                         <p className="flex gap-1 items-center border-2 p-1 rounded-md border-sky-600"><AiFillStar className='seller__star' /> 5.7</p>
                     </div>
                 </div>
                 <div className="seller__container__card__con__card">
 
-                    <div className='seller__container__card__con__card__desc'>
+                    <div className='seller__container__card__con__card__desc cursor-pointer'>
                         <img src={cod1} alt="" />
                         <div className="seller__container__card__con__card__desc__text">
                             <p>Sold 234 account </p>
@@ -94,68 +76,71 @@ const Sellers = () => {
                         </div>
                     </div>
                     <div className='seller__container__card__con__card__stats'>
-                        <p>Ashalav</p>
+                        <p className='cursor-pointer'>Ashalav</p>
                         <p className="flex gap-1 items-center border-2 p-1 rounded-md border-sky-600"><AiFillStar className='seller__star' /> 5.7</p>
                     </div>
                 </div>
 
             </div>
+            {/* end top ranking */}
 
-
+            {/* new sellers */}
             <div className="seller__container__sellers">
                 <div className="seller__container__sellers__left">
                     <h1 className='text-xl'>New Sellers</h1>
-                    <div className='seller__container__sellers__list border-b-2 border-gray-400 p-1'>
-                        <img src={cod1} alt="" />
-                        <p>Osas</p>
-                        <p>$677</p>
-                        <p className='flex items-center gap-1'> <AiFillStar className='seller__star' />4.5 </p>
-                        <button type="button" class="text-white bg-[#f24902]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-[#f24902] dark:focus:ring-blue-800">
-                            <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            <span class="sr-only">Icon description</span>
-                        </button>
-                    </div>
-                    <div className='seller__container__sellers__list border-b-2 border-gray-400 p-1'>
-                        <img src={cod1} alt="" />
-                        <p>Osas</p>
-                        <p>$677</p>
-                        <p className='flex items-center gap-1'> <AiFillStar className='seller__star' />4.5 </p>
-                        <button type="button" class="text-white bg-[#f24902]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-[#f24902] dark:focus:ring-blue-800">
-                            <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            <span class="sr-only">Icon description</span>
-                        </button>
-                    </div>
-                    <div className='seller__container__sellers__list border-b-2 border-gray-400 p-1'>
-                        <img src={cod1} alt="" />
-                        <p>Osas</p>
-                        <p>$677</p>
-                        <p className='flex items-center gap-1'> <AiFillStar className='seller__star' />4.5 </p>
-                        <button type="button" class="text-white bg-[#f24902]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-[#f24902] dark:focus:ring-blue-800">
-                            <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            <span class="sr-only">Icon description</span>
-                        </button>
 
+
+                    <div className='seller__container__sellers__list border-b-2 border-gray-400 p-1'>
+                        <img src={cod1} alt="" />
+                        <p className='flex items-center text-white gap-1'><FaUserTag style={{ borderColor: "white", }} />Osas</p>
+                        <p className='gap-1'>Sold: <span className='text-orange-500 '>8</span></p>
+                        <p className='flex items-center gap-1'> <AiFillStar className='seller__star' />4.5 </p>
+                        <button type="button" class="cursor-pointer hover:bg-orange-900 text-white bg-[#f24902]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-[#f24902] dark:focus:ring-blue-800">
+                            <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            <span class="sr-only">Icon description</span>
+                        </button>
                     </div>
                     <div className='seller__container__sellers__list border-b-2 border-gray-400 p-1'>
                         <img src={cod1} alt="" />
-                        <p>Osas</p>
-                        <p>$677</p>
+                        <p className='flex items-center text-white gap-1'><FaUserTag style={{ borderColor: "white", }} />Osas</p>
+                        <p className='gap-1'>Sold: <span className='text-orange-500 '>8</span></p>
                         <p className='flex items-center gap-1'> <AiFillStar className='seller__star' />4.5 </p>
-                        <button type="button" class="text-white bg-[#f24902]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-[#f24902] dark:focus:ring-blue-800">
+                        <button type="button" class="cursor-pointer hover:bg-orange-900 text-white bg-[#f24902]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-[#f24902] dark:focus:ring-blue-800">
                             <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             <span class="sr-only">Icon description</span>
                         </button>
                     </div>
-                    <div className='seller__container__sellers__list '>
+                    <div className='seller__container__sellers__list border-b-2 border-gray-400 p-1'>
                         <img src={cod1} alt="" />
-                        <p>Osas</p>
-                        <p>$677</p>
+                        <p className='flex items-center text-white gap-1'><FaUserTag style={{ borderColor: "white", }} />Osas</p>
+                        <p className='gap-1'>Sold: <span className='text-orange-500 '>8</span></p>
                         <p className='flex items-center gap-1'> <AiFillStar className='seller__star' />4.5 </p>
-                        <button type="button" class="text-white bg-[#f24902]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-[#f24902] dark:focus:ring-blue-800">
+                        <button type="button" class="cursor-pointer hover:bg-orange-900 text-white bg-[#f24902]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-[#f24902] dark:focus:ring-blue-800">
                             <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             <span class="sr-only">Icon description</span>
                         </button>
                     </div>
+                    <div className='seller__container__sellers__list border-b-2 border-gray-400 p-1'>
+                        <img src={cod1} alt="" />
+                        <p className='flex items-center text-white gap-1'><FaUserTag style={{ borderColor: "white", }} />Osas</p>
+                        <p className='gap-1'>Sold: <span className='text-orange-500 '>8</span></p>
+                        <p className='flex items-center gap-1'> <AiFillStar className='seller__star' />4.5 </p>
+                        <button type="button" class="cursor-pointer hover:bg-orange-900 text-white bg-[#f24902]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-[#f24902] dark:focus:ring-blue-800">
+                            <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            <span class="sr-only">Icon description</span>
+                        </button>
+                    </div>
+                    <div className='seller__container__sellers__list border-b-2 border-gray-400 p-1'>
+                        <img src={cod1} alt="" />
+                        <p className='flex items-center text-white gap-1'><FaUserTag style={{ borderColor: "white", }} />Osas</p>
+                        <p className='gap-1'>Sold: <span className='text-orange-500 '>8</span></p>
+                        <p className='flex items-center gap-1'> <AiFillStar className='seller__star' />4.5 </p>
+                        <button type="button" class="cursor-pointer hover:bg-orange-900 text-white bg-[#f24902]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-[#f24902] dark:focus:ring-blue-800">
+                            <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            <span class="sr-only">Icon description</span>
+                        </button>
+                    </div>
+
                 </div>
 
                 <div className="seller__container__sellers__right">
@@ -180,6 +165,9 @@ const Sellers = () => {
                     <button className='hidden'>View your seller page</button>
                 </div>
             </div>
+            {/* end sellers */}
+
+
         </div>
     )
 }

@@ -49,9 +49,15 @@
 
 .seller__container__sellers__list {
     display: flex;
-    width: 80%;
+    width: 85%;
     align-items: center;
     justify-content: space-between;
+}
+
+.seller__container__sellers__list>p {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .seller__container__sellers__list>img {

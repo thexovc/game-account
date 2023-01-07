@@ -1,0 +1,7 @@
+.seller__search {
+    width: 100%;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
