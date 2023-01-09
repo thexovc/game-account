@@ -13,7 +13,7 @@ const Stats = () => {
       <img className="stats__image" src={ha2} alt="" />
       <div className="stats__content">
         <div className="stats__top">
-          <div className="stats__top1">
+          <div className="stats__top1 flex items-center flex-col">
             <MdAccountBalance className="stats__icon" />
             <div className="stats__info">
               <h1>300+</h1>
@@ -21,7 +21,7 @@ const Stats = () => {
             </div>
           </div>
 
-          <div className="stats__top2">
+          <div className="stats__top2 flex items-center flex-col">
             <BsFillPeopleFill className="stats__icon" />
             <div className="stats__info">
               <h1>1K+</h1>
@@ -30,7 +30,7 @@ const Stats = () => {
           </div>
         </div>
         <div className="stats__bottom">
-          <div className="stats__top1">
+          <div className="stats__top1 flex items-center flex-col">
             <BsWallet className="stats__icon" />
             <div className="stats__info">
               <h1>200+</h1>
@@ -38,7 +38,7 @@ const Stats = () => {
             </div>
           </div>
 
-          <div className="stats__top2">
+          <div className="stats__top2 flex items-center flex-col">
             <BsFillPersonLinesFill className="stats__icon" />
             <div className="stats__info">
               <h1>400+</h1>

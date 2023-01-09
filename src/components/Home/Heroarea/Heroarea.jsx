@@ -5,9 +5,7 @@ import TypeWriter from "typewriter-effect";
 
 const Heroarea = (props) => {
   const navigate = useNavigate();
-  // const images = [p3];
 
-  // const images1 = [pa1];
   const delay = 3000;
 
   const [index, setIndex] = useState(0);
@@ -23,11 +21,10 @@ const Heroarea = (props) => {
     }
   }
 
-  //   "@media screen and (max-width: 1000px)": {
-  //     backgroundImage: `url(${images1[0]})`,
-  //     display: "none",
-  //   },
-  // };
+  const goto = () => {
+    navigate('/signup')
+  }
+
 
   useEffect(() => {
     resetTimeout();
@@ -82,7 +79,7 @@ const Heroarea = (props) => {
           className="enterbutton__div__heroarea"
         >
           <button className="enter__button__heroarea">
-            <span className="button__text">Get Started</span>
+            <span className="button__text cursor-pointer" onClick={goto}>Get Started</span>
           </button>
         </div>
       </div>

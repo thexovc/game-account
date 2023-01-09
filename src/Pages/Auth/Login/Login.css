@@ -4,7 +4,6 @@
     background-image: url('../../../assets/Auth/gamepad.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: center center; */
     color: var(--text-color);
     height: 100%;
     padding: 50px 0;
@@ -13,10 +12,15 @@
 
 .signup {
     width: 100%;
+    display: flex;
+    background-image: url('../../../assets/Auth/gamepad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-color);
     height: 100%;
+    padding: 50px 0;
+
 }
-
-
 
 
 .login__container__left {
@@ -147,6 +151,16 @@
     display: none;
 }
 
+.navbar__container__mobile {
+    display: none;
+}
+
+.navbar__container__mobile__link {
+    display: none;
+}
+
+
+
 
 @media screen and (max-width: 992px) {
     .login__container__right {
@@ -154,7 +168,7 @@
     }
 
     .login__container {
-        height: 100vh;
+        height: 1000%;
     }
 
 
@@ -184,6 +198,68 @@
     .login__container__toggle {
         display: none;
     }
+
+    .navbar__container__mobile {
+        padding-right: 10px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .navbar__container___mobile__link__close {
+        font-size: 30px;
+        text-align: end;
+        font-weight: bold;
+    }
+
+    .navbar__container__mobile__link {
+        display: flex;
+    }
+
+    .navbar__container__mobile__icon {
+        font-size: 30px;
+    }
+
+    .navbar__container__mobile__link {
+        display: flex;
+        flex-direction: column;
+        z-index: 9999;
+        background-color: var(--bg-color);
+        top: 0;
+        width: 60%;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        right: 0;
+        position: fixed;
+        height: 100vh;
+        gap: 20px;
+    }
+
+    .navbar__container__mobile__link>li {
+        list-style: none;
+        font-size: 20px;
+    }
+
+    .navbar__container__mobile__link__button__login {
+        border: 3px solid var(--primary-color);
+        background-color: var(--bg-color);
+        padding: 10px;
+        font-size: 16px;
+        color: var(--text-color);
+        border-radius: 12px;
+    }
+
+    .navbar__container__mobile__link__button__signup {
+        background-color: var(--primary-color);
+        padding: 10px;
+        color: var(--text-color);
+        font-size: 16px;
+        border-radius: 12px;
+    }
+
+
 
 }
 

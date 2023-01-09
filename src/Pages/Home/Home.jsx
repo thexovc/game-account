@@ -10,20 +10,26 @@ import Cta from "../../components/Home/Cta/Cta";
 import Trx from "../../components/Home/Trx/Trx";
 import "./Home.css";
 import Hero from "../../components/Home/Heroarea/Hero";
+import Navbar from "../../components/Home/Navbar/Navbar";
+import Footer from "../../components/Home/Footer/Footer";
 
 const Home = ({ expandState }) => {
   return (
-    <div className="home__container">
-      <Hero expandState={expandState} />
-      <Games />
-      <Stats />
-      <Cta />
-      <Wcu />
-      <Plans />
-      <HowToUse />
-      <Video />
-      <Trx />
-    </div>
+    <>
+      <Navbar />
+      <div className="home__container">
+        <Hero expandState={expandState} />
+        <Games />
+        <Stats />
+        <Cta />
+        <Wcu />
+        <Plans />
+        <HowToUse />
+        <Video />
+        <Trx />
+      </div>
+      <Footer />
+    </>
   );
 };
 

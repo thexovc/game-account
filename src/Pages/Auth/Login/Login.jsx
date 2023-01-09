@@ -2,10 +2,13 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Login.css'
 import { FiMenu } from 'react-icons/fi'
+import { supabase } from '../../../config/supabaseClient'
 
 const Login = () => {
     const navigate = useNavigate()
     const [toggle, setToggle] = useState(false)
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
 
     const home = () => {
         navigate('/')
@@ -22,6 +25,39 @@ const Login = () => {
         navigate('/signup')
     }
 
+    const handleSignin = async (e) => {
+        e.preventDefault()
+
+        if (password == "" || email == "") {
+            alert("Check your username and  password")
+            return
+        }
+
+        try {
+            const { error, data } = await supabase.auth.signInWithPassword({
+                email: email,
+                password: password,
+            })
+
+            console.log(data)
+
+            if (error) {
+                throw error
+            } else {
+                alert("you logged in")
+                navigate('/dashboard')
+            }
+
+            // console.log(data)
+        } catch (error) {
+            alert("An Error occured")
+            console.log(error)
+        }
+
+    }
+
+
+
 
 
     return (
@@ -35,16 +71,16 @@ const Login = () => {
                 <div className="login__container__left__form">
                     <h1>SIGN IN!</h1>
 
-                    <form action="">
+                    <form >
                         <label htmlFor="email">Email address</label>
-                        <input className='border-b-2 border-white' type="email" /> <br />
+                        <input onChange={(e) => setEmail(e.target.value)} className='border-b-2 border-white' type="email" /> <br />
                         <label htmlFor="Password">Password</label>
-                        <input className='border-b-2 border-white' type="password" />
+                        <input onChange={(e) => setPassword(e.target.value)} className='border-b-2 border-white' type="password" />
                         <div className="login__container__left__form__checkbox">
                             <input type="checkbox" />
                             Remember me
                         </div>
-                        <button style={{ cursor: "pointer" }}>Continue</button>
+                        <button onClick={handleSignin} style={{ cursor: "pointer" }}>Continue</button>
                     </form>
 
                     <div className="login__container__left__form__signup">
@@ -52,16 +88,16 @@ const Login = () => {
                             Google Sign Up
                         </div>
 
-                        <p onClick={signup}>Don’t have an account? <span style={{ cursor: "pointer" }}>Sign Up</span></p>
+                        <p className='text-lg' onClick={signup}>Don’t have an account? <span style={{ cursor: "pointer" }}>Sign Up</span></p>
                     </div>
                     <br /><br />
                 </div>
             </div>
             <div className="login__container__right">
-                <div className='login__container__right__nav'>
-                    <p style={{ cursor: "pointer" }} onClick={home}>Home</p>
-                    <p style={{ cursor: "pointer" }}>Games</p>
-                    <p style={{ cursor: "pointer" }}>Contact us</p>
+                <div className='login__container__right__nav '>
+                    <p className='text-lg' style={{ cursor: "pointer" }} onClick={home}>Home</p>
+                    <p className='text-lg' style={{ cursor: "pointer" }}>Games</p>
+                    <p className='text-lg' style={{ cursor: "pointer" }}>Contact us</p>
                 </div>
             </div>
 

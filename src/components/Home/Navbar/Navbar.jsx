@@ -1,24 +1,18 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
-  // const [toggle, setToggle] = useState(false)
+  const navigate = useNavigate()
 
-  // const handleToggle = () => {
-  //     setToggle(!toggle);
-  // }
-
-  // const variants = {
-  //     open: {
-  //         transition: { staggerChildren: 0.07, delayChildren: 0.2 }
-  //     },
-  //     closed: {
-  //         transition: { staggerChildren: 0.05, staggerDirection: -1 }
-  //     }
-  // }
+  const login = () => {
+    navigate('/login')
+  }
+  const signup = () => {
+    navigate('/signup')
+  }
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -49,8 +43,7 @@ const Navbar = () => {
         <span
           style={{ textDecoration: "none" }}
           className="login"
-          onClick={handleClick}
-          to="/"
+          onClick={login}
         >
           Log In
         </span>
@@ -58,8 +51,7 @@ const Navbar = () => {
         <span
           style={{ textDecoration: "none" }}
           className="login bg-[#f24902]"
-          onClick={handleClick}
-          to="/"
+          onClick={signup}
         >
           Sign Up
         </span>
@@ -69,7 +61,7 @@ const Navbar = () => {
         className={`nav-toggle ${isOpen && "open"}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className="bar"></div>
+        <div className="bar text-sm"></div>
       </div>
     </div>
   );

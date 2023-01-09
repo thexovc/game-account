@@ -9,13 +9,14 @@
   padding-right: 15px;
 }
 
-.Navbar > .nav-logo {
+.Navbar>.nav-logo {
   font-weight: 700;
   font-size: 11px;
   margin: 10px;
   color: #ffffff;
 }
-.Navbar > .nav-items > span {
+
+.Navbar>.nav-items>span {
   color: #ffffff;
   font-size: 16px;
 
@@ -27,7 +28,7 @@
   cursor: pointer;
 }
 
-.Navbar > .nav-items > a {
+.Navbar>.nav-items>a {
   color: #ffffff;
   font-size: 16px;
 
@@ -38,11 +39,11 @@
   opacity: 0.9;
 }
 
-.Navbar > .nav-items > a:hover {
+.Navbar>.nav-items>a:hover {
   opacity: 1;
 }
 
-.Navbar > .nav-items > a::before {
+.Navbar>.nav-items>a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -53,11 +54,11 @@
   transition: all 0.45s;
 }
 
-.Navbar > .nav-items > a:hover::before {
+.Navbar>.nav-items>a:hover::before {
   width: none;
 }
 
-.Navbar > .nav-toggle {
+.Navbar>.nav-toggle {
   display: none;
 }
 
@@ -83,9 +84,10 @@
 }
 
 @media (max-width: 850px) {
-  .Navbar > .nav-items {
+
+  .Navbar>.nav-items {
     position: absolute;
-    top: 61px;
+
     display: flex;
     flex-direction: column;
     background: var(--bg-color);
@@ -95,17 +97,21 @@
     transform: translateX(-100%);
     transition: all 0.45s;
     z-index: 100000;
+    top: 61px;
+    position: fixed;
+    height: 100%;
+    padding-bottom: 40px;
   }
 
-  .Navbar > .nav-items > a::before {
+  .Navbar>.nav-items>a::before {
     background: transparent;
   }
 
-  .Navbar > .nav-items.open {
+  .Navbar>.nav-items.open {
     transform: translateX(0);
   }
 
-  .Navbar > .nav-toggle {
+  .Navbar>.nav-toggle {
     display: flex;
     width: 50px;
     height: 50px;
@@ -115,7 +121,7 @@
     margin: 10px;
   }
 
-  .nav-toggle > .bar {
+  .nav-toggle>.bar {
     position: relative;
     width: 32px;
     height: 2px;
@@ -123,8 +129,8 @@
     transition: all 0.45s ease-in-out;
   }
 
-  .nav-toggle > .bar::before,
-  .nav-toggle > .bar::after {
+  .nav-toggle>.bar::before,
+  .nav-toggle>.bar::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -133,28 +139,28 @@
     transition: all 0.45s ease-in-out;
   }
 
-  .nav-toggle > .bar::before {
+  .nav-toggle>.bar::before {
     width: 25px;
     transform: translateY(-8px);
     right: 0;
   }
 
-  .nav-toggle > .bar::after {
+  .nav-toggle>.bar::after {
     width: 32px;
     transform: translateY(8px);
   }
 
-  .nav-toggle.open > .bar {
+  .nav-toggle.open>.bar {
     transform: translateX(-40px);
     background: transparent;
   }
 
-  .nav-toggle.open > .bar::before {
+  .nav-toggle.open>.bar::before {
     width: 32px;
     transform: rotate(45deg) translate(26px, -26px);
   }
 
-  .nav-toggle.open > .bar::after {
+  .nav-toggle.open>.bar::after {
     transform: rotate(-45deg) translate(26px, 26px);
   }
 
