@@ -6,11 +6,13 @@ import SignUp from './Pages/Auth/SignUp/SignUp';
 import Sellers from './Pages/DashBoard/Sellers/Sellers';
 import { SellersSearch } from './Pages/DashBoard/Sellers/SellersSearch/SellersSearch';
 import Dashboard from "./Pages/DashBoard/Dashboard";
+import Navbar from "./components/Home/Navbar/Navbar"
 
 function App() {
 
   return (
     <>
+      <Navbar />
       <div>
         <Routes>
           <Route path='/' element={<Home />} />

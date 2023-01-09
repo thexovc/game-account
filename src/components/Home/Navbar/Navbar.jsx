@@ -25,13 +25,13 @@ const Navbar = () => {
   const handleClick = () => setIsOpen(!isOpen);
 
   return (
-    <div className="Navbar">
+    <div className="Navbar h-full">
       <span className="nav-logo">
         <div className="moralis">
-          <h1>Matrix Games</h1>
+          <h1 className="text-xl">Matrix Games</h1>
         </div>
       </span>
-      <div className={`nav-items ${isOpen && "open"}`}>
+      <div className={`nav-items -mt-5 pt-5 ${isOpen && "open"}`}>
         <NavLink onClick={handleClick} to="/">
           Home
         </NavLink>
@@ -57,7 +57,7 @@ const Navbar = () => {
 
         <span
           style={{ textDecoration: "none" }}
-          className="signup"
+          className="login bg-[#f24902]"
           onClick={handleClick}
           to="/"
         >

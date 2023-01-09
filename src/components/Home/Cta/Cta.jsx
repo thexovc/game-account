@@ -5,8 +5,8 @@ import "./Cta.css";
 const Cta = () => {
   const navigate = useNavigate()
 
-  const dashboard = () => {
-    navigate('/dashboard')
+  const goto = () => {
+    navigate('/signup')
   }
 
   return (
@@ -16,7 +16,7 @@ const Cta = () => {
         now
       </div>
       <div className="cta__button cursor-pointer">
-        <p onClick={dashboard}>Get Started</p>
+        <p onClick={goto}>Get Started</p>
       </div>
     </div>
   );
