@@ -13,12 +13,12 @@ const Dashboard = () => {
     setExpanded(state);
   };
   return (
-    <div className="App">
+    <div className="App bg-[#170727]">
       <div className="AppHead">
         <Navbar expandState={expandState} />
       </div>
 
-      <div className="AppGlass">
+      <div className="AppGlass bg-[#170727]">
         <Sidebar expandState={expanded} />
         <MainDash />
         <RightSide />
