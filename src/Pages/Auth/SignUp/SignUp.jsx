@@ -52,7 +52,7 @@ const SignUp = () => {
                 email: email,
                 password: password,
                 options: {
-                    emailRedirectTo: 'http://localhost:3000/login'
+                    emailRedirectTo: 'https://game-account.vercel.app/login'
                 }
             })
 
