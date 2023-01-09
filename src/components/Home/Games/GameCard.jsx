@@ -1,20 +1,30 @@
-import React from 'react'
-import cod1 from '../../../assets/Home/Game/cod1.jpg'
-import './GameCard.css'
+import React from "react";
+import cod1 from "../../../assets/Home/Game/cod1.jpg";
+import "./GameCard.css";
 
-function GameCard({ type }) {
+function GameCard(props) {
+  return (
+    <>
+      <div
+        className={
+          props.type == "coming"
+            ? "gamecard__container__card__con__card coming"
+            : "gamecard__container__card__con__card"
+        }
+      >
+        <img src={props.image} alt="" />
 
-    return (
-        <>
-            <div className="gamecard__container__card__con__card">
-                <img src={cod1} alt="" />
-                <div>
-                    <p>Call of Duty mobile</p>
-                    <p className={`gamecard__container__card__con__card__btn ${type && "gamecard__container__card__con__gray"}`}>Enter</p>
-                </div>
-            </div>
-        </>
-    )
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#063856"
+            fill-opacity="1"
+            d="M0,128L17.1,128C34.3,128,69,128,103,144C137.1,160,171,192,206,208C240,224,274,224,309,229.3C342.9,235,377,245,411,224C445.7,203,480,149,514,144C548.6,139,583,181,617,197.3C651.4,213,686,203,720,181.3C754.3,160,789,128,823,133.3C857.1,139,891,181,926,181.3C960,181,994,139,1029,122.7C1062.9,107,1097,117,1131,138.7C1165.7,160,1200,192,1234,208C1268.6,224,1303,224,1337,202.7C1371.4,181,1406,139,1423,117.3L1440,96L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"
+          ></path>
+        </svg>
+        <p>{props.title}</p>
+      </div>
+    </>
+  );
 }
 
-export default GameCard
+export default GameCard;

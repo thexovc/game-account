@@ -11,6 +11,10 @@ const Plans = () => {
     //   className={styles.plans__container}
     // ></motion.div>
     <div className="plans__container">
+      <div className="plans__heading">
+        <h1>Plans</h1>
+        <p>Subscribe to any of our paid plans and enjoy more services</p>
+      </div>
       <div className="plans__cards">
         {/* card1 */}
         <div className="plans__card1">

@@ -34,7 +34,7 @@ const Stats = () => {
             <BsWallet className="stats__icon" />
             <div className="stats__info">
               <h1>200+</h1>
-              <p>Over 200 Successful Transactions</p>
+              <p>Over 200 Transactions</p>
             </div>
           </div>
 

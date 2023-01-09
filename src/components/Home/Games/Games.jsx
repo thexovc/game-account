@@ -1,31 +1,36 @@
-import React from 'react'
-import './Games.css'
-import cod1 from '../../../assets/Home/Game/cod1.jpg'
-import GameCard from './GameCard'
+import React from "react";
+import "./Games.css";
+import cod from "../../../assets/Home/Game/cod.jpg";
+import pubg from "../../../assets/Home/Game/pubg.png";
+import apex from "../../../assets/Home/Game/apex.png";
+import coc from "../../../assets/Home/Game/coc.png";
+import fortnite from "../../../assets/Home/Game/fortnite.png";
+import pes from "../../../assets/Home/Game/pes.png";
+import GameCard from "./GameCard";
 
 const Games = () => {
-    return (
-        <div className="game__container">
-            <div className="game__container__title">
-                <h1>Games</h1>
-                <ul>
-                    <li className="game__container__title__active">Popular</li>
-                    <li>Recent</li>
-                </ul>
-            </div>
+  return (
+    <div className="game__container">
+      <div className="game__container__title">
+        <h1>Games</h1>
+        <ul>
+          <li className="game__container__title__active">Popular</li>
+          <li>Recent</li>
+        </ul>
+      </div>
 
-            <div className="game__container__card__con">
+      <div className="game__container__card__con">
+        <GameCard image={cod} title="Call of Duty Mobile" />
+        <GameCard image={pubg} type="coming" title="Pubg" />
+        <GameCard image={coc} type="coming" title="Clash of Clans" />
+        <GameCard image={apex} type="coming" title="Apex Legends" />
+        <GameCard image={pes} type="coming" title="Pes Mobile" />
+        <GameCard image={fortnite} type="coming" title="Fortnite" />
+      </div>
 
-                <GameCard />
-                <GameCard type="coming" />
-                <GameCard type="coming" />
-                <GameCard type="coming" />
+      <p className="see__all">See All</p>
+    </div>
+  );
+};
 
-
-            </div>
-
-        </div>
-    )
-}
-
-export default Games
+export default Games;

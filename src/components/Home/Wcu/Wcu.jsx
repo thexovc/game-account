@@ -7,6 +7,11 @@ import { AiFillStar } from "react-icons/ai";
 const Wcu = () => {
   return (
     <div className="wcu__container">
+      <div className="wcu__heading">
+        <h1>Why Choose Us</h1>
+        <p>We Offer Quality Services that makes customers satisfied</p>
+      </div>
+
       <div className="wcu__content">
         <div className="wcu__cards">
           <div className="wcu__card">
