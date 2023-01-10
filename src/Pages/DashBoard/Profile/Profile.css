@@ -82,6 +82,28 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
+.profile__game {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile__game>h1 {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.profile__game__card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px 20px;
+}
+
 
 @media screen and (max-width: 1200px) {
     .profileGlass {
@@ -94,4 +116,11 @@
     .profileGlass {
         grid-template-columns: 1fr;
     }
+
+    .profile__game__card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px 10px;
+    }
+
 }

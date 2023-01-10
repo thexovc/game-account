@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import Navbar from "../../../components/Dashboard/Navbar/Navbar";
 import Sidebar from '../../../components/Dashboard/Sidebar';
 import './Profile.css'
+import { AiFillStar } from 'react-icons/ai'
+import cod1 from '../../../assets/Home/Game/cod1.jpg'
+
 
 const Profile = () => {
     const [expanded, setExpanded] = useState(!false);
@@ -50,6 +53,36 @@ const Profile = () => {
 
                     <div className="profile__game">
                         <h1>Avaliable Games</h1>
+                        <div className="profile__game__card">
+                            <div className="seller__container__card__con__card">
+
+                                <div className='seller__container__card__con__card__desc cursor-pointer'>
+                                    <img src={cod1} alt="" />
+                                    <div className="seller__container__card__con__card__desc__text">
+                                        <p>Sold 234 account </p>
+                                        <p>Made $858</p>
+                                    </div>
+                                </div>
+                                <div className='seller__container__card__con__card__stats'>
+                                    <p className='cursor-pointer'>Ashalav</p>
+                                    <p className="flex gap-1 items-center border-2 p-1 rounded-md border-sky-600"><AiFillStar className='seller__star' /> 5.7</p>
+                                </div>
+                            </div>
+                            <div className="seller__container__card__con__card">
+
+                                <div className='seller__container__card__con__card__desc cursor-pointer'>
+                                    <img src={cod1} alt="" />
+                                    <div className="seller__container__card__con__card__desc__text">
+                                        <p>Sold 234 account </p>
+                                        <p>Made $858</p>
+                                    </div>
+                                </div>
+                                <div className='seller__container__card__con__card__stats'>
+                                    <p className='cursor-pointer'>Ashalav</p>
+                                    <p className="flex gap-1 items-center border-2 p-1 rounded-md border-sky-600"><AiFillStar className='seller__star' /> 5.7</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
