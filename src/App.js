@@ -6,7 +6,7 @@ import SignUp from './Pages/Auth/SignUp/SignUp';
 import Sellers from './Pages/DashBoard/Sellers/Sellers';
 import { SellersSearch } from './Pages/DashBoard/Sellers/SellersSearch/SellersSearch';
 import Dashboard from "./Pages/DashBoard/Dashboard";
-import Navbar from "./components/Home/Navbar/Navbar"
+import Profile from './Pages/DashBoard/Profile/Profile';
 
 function App() {
 
@@ -21,6 +21,7 @@ function App() {
           <Route path='/sellers' element={<Sellers />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/sellers_search' element={<SellersSearch />} />
+          <Route path='/profile' element={<Profile />} />
         </Routes>
       </div>
     </>

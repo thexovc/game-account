@@ -94,7 +94,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 2%;
     gap: 10px;
     align-items: center;
 }
@@ -111,7 +110,7 @@
 .seller__container__card__con__card__desc>img {
     object-fit: contain;
     width: 100%;
-    padding-top: 5px;
+    padding-top: 0px;
     border-radius: 50%;
     border-radius: 12px;
 }
@@ -154,7 +153,6 @@
     .seller__container__card__con__card {
         display: flex;
         width: 100%;
-        padding: 0 2%;
         gap: 20px;
         align-items: center;
     }
@@ -167,9 +165,7 @@
         border-radius: 4px;
     }
 
-    .seller__container__card__con__card__desc {
-        padding-top: 10px;
-    }
+
 
     .seller__container__sellers {
         width: 95%;
@@ -219,7 +215,4 @@
         font-size: 12px;
     }
 
-    .seller__container__card__con__card__desc {
-        padding-top: 5px;
-    }
 }
