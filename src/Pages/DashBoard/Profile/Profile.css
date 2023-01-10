@@ -15,7 +15,7 @@
     background: var(--bg-c);
     padding-top: 0px;
     gap: 16px;
-    grid-template-columns: 11rem auto;
+    grid-template-columns: 15% auto;
     /* overflow: hidden; */
 }
 
@@ -107,7 +107,7 @@
 
 @media screen and (max-width: 1200px) {
     .profileGlass {
-        grid-template-columns: 10% 70%;
+        grid-template-columns: 10% auto;
         overflow-y: scroll;
     }
 }
@@ -115,6 +115,12 @@
 @media screen and (max-width: 768px) {
     .profileGlass {
         grid-template-columns: 1fr;
+    }
+
+    .profile__title>img {
+        border-radius: 50%;
+        width: 20%;
+
     }
 
     .profile__game__card {

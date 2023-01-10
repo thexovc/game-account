@@ -38,20 +38,25 @@ const Profile = () => {
                             </p>
                         </div>
 
-                        <div className="profile__stats">
+                        <div className="profile__stats pb-5">
                             <div>
                                 <p className='profile__stats__title'>How much made</p>
                                 <p className='profile__stats__text'>$1000</p>
                             </div>
                             <div>
                                 <p className='profile__stats__title'>Ratings</p>
-                                <p className='profile__stats__text'>star star star</p>
+                                <div className="profile__stats__star flex gap-1 pt-2">
+                                    <AiFillStar className='text-[#FFCC4D]' />
+                                    <AiFillStar className='text-[#FFCC4D]' />
+                                    <AiFillStar className='text-[#FFCC4D]' />
+                                    <AiFillStar />
+                                </div>
                             </div>
                         </div>
 
                     </div>
 
-                    <div className="profile__game">
+                    <div className="profile__game pb-10">
                         <h1>Avaliable Games</h1>
                         <div className="profile__game__card">
                             <div className="seller__container__card__con__card">
