@@ -1,5 +1,5 @@
 .profile__con {
-    background: var(--bg-color);
+    background: #1e2225;
     width: 100%;
     color: var(--text-color);
     display: flex;
@@ -15,7 +15,7 @@
     background: var(--bg-c);
     padding-top: 0px;
     gap: 16px;
-    grid-template-columns: 15% auto;
+    grid-template-columns: 11rem auto;
     /* overflow: hidden; */
 }
 
@@ -23,7 +23,7 @@
     width: 100%;
     padding: 0 5%;
     gap: 20px;
-    background: #150D2E;
+    background: #070f16;
     display: flex;
     flex-direction: column;
 }
@@ -82,6 +82,53 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
+
+.profile__stats__card__con {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.profile__stats__card {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: #1e2225;
+    border: 1px solid white;
+    background: #eee;
+    border-radius: 4px;
+    padding: 20px;
+
+    justify-content: space-between;
+}
+
+.profile__stats__card__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__stats__card__text>p {
+    font-size: 18px;
+}
+
+.profile__stats__card__text>h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile__stats__card__text>span {
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+}
+
+.profile__stats__card__icon {
+    font-size: 30px;
+}
+
+
 .profile__game {
     display: flex;
     flex-direction: column;
@@ -93,7 +140,20 @@
     padding-top: 20px;
     font-size: 20px;
     font-weight: bold;
+}
 
+
+.profile__game__category {
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.profile__game__category>p {
+    border: 2px solid #66FF99;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 .profile__game__card {
@@ -110,11 +170,20 @@
         grid-template-columns: 10% auto;
         overflow-y: scroll;
     }
+
+
+    .profile__stats__card__text>span {
+        display: block;
+        gap: 5px;
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .profileGlass {
-        grid-template-columns: 1fr;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
     }
 
     .profile__title>img {
@@ -123,10 +192,76 @@
 
     }
 
+    .profile__game {
+        width: 100%;
+    }
+
+    .profile__game__category {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 20px;
+    }
+
+    .profile__game__category>p {
+        padding: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+
     .profile__game__card {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         padding: 10px 10px;
+    }
+
+    .profile__stats__card__con {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .profile__stats__card {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        color: #1e2225;
+        border: 1px solid white;
+        background: #eee;
+        border-radius: 4px;
+        padding: 10px;
+
+        justify-content: space-between;
+    }
+
+    .profile__stats__card__text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+
+    }
+
+    .profile__stats__card__text>p {
+        font-size: 16px;
+    }
+
+    .profile__stats__card__text>h1 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .profile__stats__card__text>span {
+        display: block;
+        gap: 1px;
+        font-size: 14px;
+    }
+
+    .profile__stats__card__icon {
+        font-size: 30px;
     }
 
 }
